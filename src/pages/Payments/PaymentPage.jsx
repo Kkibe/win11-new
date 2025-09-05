@@ -27,7 +27,7 @@ export default function PaymentPage({ setUserData }) {
 
 	// Payment methods
 	const paymentMethods = [
-		{ id: "mpesa", label: "M-Pesa 📲" },
+		{ id: "mpesa", label: "Mobile/Card 📲" },
 		{ id: "crypto", label: "Crypto ₿" },
 	];
 
@@ -85,7 +85,7 @@ export default function PaymentPage({ setUserData }) {
 		reference: new Date().getTime().toString(),
 		email: currentUser.email,
 		amount: price * 100,
-		publicKey: "pk_live_71bf88a41666c28d7e035b7086eddedda3ba8c47",
+		publicKey: "pk_live_523d109eeedcc4dc064b26d444999239146b2981",
 		currency: "KES",
 		metadata: { name: currentUser.email },
 		text: "Pay Now",
